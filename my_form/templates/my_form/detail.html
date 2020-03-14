@@ -1,0 +1,14 @@
+{% extends "my_form/base.html" %}
+
+{% block content %}
+{% csrf_token %}
+<h1>Client Details</h1>
+
+<p>fullname: {{ detail.full_name }}</p>
+<p>mobile_phone: {{ detail.mobile_phone }}</p>
+<p>client_value: $ {{ detail.client_value }} </p>
+<p>email: {{ detail.email }}</p>
+<p>web_address: {{ detail.web_address }}</p>
+
+   
+{% endblock %}
